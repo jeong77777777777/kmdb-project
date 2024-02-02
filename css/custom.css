@@ -1,0 +1,23 @@
+.pagetitle .moviepage {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.imgs {
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+}
+
+.imgs > div {
+  width: 25%;
+}
+
+.imgs > div > p {
+  font-size: 1.25rem;
+}

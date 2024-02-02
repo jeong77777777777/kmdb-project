@@ -14,15 +14,15 @@ async function getProducts() {
     // 데이터 요청 및 응답 시도 : 성공일 경우 첫번째 코드 블럭으로 이동
     const data = await getRequest(url);
     const movieWrapper = document.querySelector('.imgs');
-    const movieTitle = document.querySelector('.title');
+    // const movieTitle = document.querySelector('.title');
     console.log(data.data.movies);
 
     const movies = data.data.movies;
     movies.forEach((movie) => {
-      const imgEl = `<img src=${movie.medium_cover_image}>`;
-      const titleEl = `${movie.title}`;
-      movieWrapper.insertAdjacentHTML('afterbegin', imgEl);
-      movieTitle.insertAdjacentHTML('beforeend', titleEl);
+      const imgEl = `<div class=imgbox><img src=${movie.medium_cover_image}><p class=title>${movie.title}</p></div>`;
+      // const titleEl = `${movie.title}`;
+      movieWrapper.insertAdjacentHTML('beforeend', imgEl);
+      // movieTitle.insertAdjacentHTML('beforeend', titleEl);
     });
   } catch (error) {
     // 실패할 경우 두번째 코드 블럭으로 이동
