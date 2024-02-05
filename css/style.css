@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+i,
+em,
+strong,
+b {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Common CSS */
+.container {
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+  margin: auto;
+}
+
+.container img {
+  width: 100%;
+}
+
+/* Common Button Style */
+
+.btn {
+  border: 1px solid #333;
+  padding: 0.5rem 1.25rem;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.hero .container {
+  position: relative;
+  background: #fff;
+}
+
+.hero .main-title {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero .main-title h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.hero .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+/* Recent Section Style */
+
+section:not(.hero) {
+  padding: 3rem;
+}
+
+.recent .recent-title {
+  width: 100%;
+}
+
+.recent .recent-title h3 {
+  font-size: 2rem;
+  width: fit-content;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  position: relative;
+  margin: 0 auto 1rem;
+}
+
+.recent .recent-title h3:after {
+  content: ''; /* 필수값 : 보통은 입력 문자 코드가 들어감 */
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  bottom: 0;
+  left: 0;
+}
+
+.recent .recent-img {
+  margin-bottom: 1rem;
+}
+.recent .recent-info h4,
+.recent .recent-info p {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.recent .recent-info h4 span,
+.recent .recent-info p span {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.recent .recent-info h4:before,
+.recent .recent-info p:before {
+  content: '-';
+  margin-right: 0.5rem;
+}
